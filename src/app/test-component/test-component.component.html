@@ -1,0 +1,5 @@
+<button (click)="getAllUsers()">Get the users</button>
+<div *ngIf="userData">
+    <p>Got the users!</p>
+    <p *ngFor="let user of userData">{{user.id}}-{{user.name}}</p>
+</div>
